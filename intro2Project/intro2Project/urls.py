@@ -18,6 +18,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('', include('intro2App.urls')),
+
+    #With this second line , all the artists goes inside the music file
     path('music/', include('intro2App.urls')),
     path('admin/', admin.site.urls),
 ]
